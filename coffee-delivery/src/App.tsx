@@ -1,15 +1,15 @@
 import { GlobalStyle } from './styles/global'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
-import irlandes from './assets/logo.svg'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <div>
-        <h1>hahahaha</h1>
-        <img src={irlandes} alt="" />
-      </div>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   )
