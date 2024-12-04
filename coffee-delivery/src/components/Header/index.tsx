@@ -10,12 +10,12 @@ export function Header() {
       <img src={logo} alt="" />
       <nav>
         <LocationInfoContainer>
-          <MapPin size={20} weight="fill" color={theme.purple['purple-500']} />
+          <MapPin size={22} weight="fill" color={theme.purple['purple-500']} />
           <span>Porto Alegre, RS</span>
         </LocationInfoContainer>
         <NavLinkStyled to="/checkout" title="Home">
           <ShoppingCart
-            size={20} weight="fill"
+            size={22} weight="fill"
             color={theme.yellow['yellow-700']}
           />
         </NavLinkStyled>

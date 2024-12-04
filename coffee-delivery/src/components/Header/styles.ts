@@ -32,10 +32,10 @@ color: ${props => props.theme.purple['purple-700']};
 border-radius: 8px;
 font-family: ${props => props.theme['font-family'].roboto};
 font-size: 0.875rem;
-font-weight: 500;
-padding: 10px;
+padding: 8px;
 text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
 pointer-events: none;
+gap: 0.3rem;
 `
 
 export const NavLinkStyled = styled(NavLink)`
