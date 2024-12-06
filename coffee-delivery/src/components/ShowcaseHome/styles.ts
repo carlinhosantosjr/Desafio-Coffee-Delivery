@@ -25,6 +25,10 @@ background: radial-gradient(
 img {
   margin: auto auto auto 40px;
 }
+
+@media (max-width:768px){
+  display: none;
+}
 `
 export const ShowcaseTitle = styled.div`
   width: 588px;

@@ -1,11 +1,27 @@
+import { CoffeeCard } from '../../components/CoffeeCard'
 import { ShowcaseHome } from '../../components/ShowcaseHome'
-import { HomeContainer } from './styles'
+import { CoffeeListContainer, HomeContainer } from './styles'
+import { coffees } from '../../mocks/coffees'
+
+const coffeeListMocked = coffees
 
 export function Home() {
   return (
     <HomeContainer>
       <ShowcaseHome />
-      <h1>Nossos cafés</h1>
+      <CoffeeListContainer>
+        <h2>Nossos cafés</h2>
+        {coffeeListMocked.map((coffee) =>
+          <CoffeeCard
+            key={coffee.id}
+            id={coffee.id}
+            image={coffee.image}
+            name={coffee.name}
+            description={coffee.description}
+            tags={coffee.tags}
+            value={coffee.value}
+          />)}
+      </CoffeeListContainer>
     </HomeContainer>
   )
 }
