@@ -1,4 +1,4 @@
-import { Minus, Plus, ShoppingCartSimple } from '@phosphor-icons/react'
+import { ShoppingCartSimple } from '@phosphor-icons/react'
 import styled from 'styled-components'
 
 export const CoffeeContainer = styled.div`
@@ -62,45 +62,12 @@ p {
 
 span {
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 900; 
   line-height: 130%;
+  min-width: 4rem;
   font-family: ${props => props.theme['font-family'].baloo};
   color: ${props => props.theme.brown['brown-400']};
 }
-`
-export const QuantityContainer = styled.div`
-background-color: ${props => props.theme.gray['gray-400']};
-align-items: center;
-display: flex;
-gap: 0.2rem;
-padding: 0.625rem;
-border-radius: 8px;
-`
-
-export const QuantityInput = styled.input`
-font-family: ${props => props.theme['font-family'].roboto};
-color: ${props => props.theme.brown['brown-800']};
-font-size: 1rem;
-display: flex;
-text-align: center;
-border: none;
-background-color: transparent;
-max-width: 1.4rem;
-//pointer-events: none;
-`
-
-export const DecreaseButton = styled(Minus)`
-color: ${props => props.theme.purple['purple-500']};
-font-size: 0.875rem;
-font-style: bold;
-cursor: pointer;
-`
-
-export const IncreaseButton = styled(Plus)`
-color: ${props => props.theme.purple['purple-500']};
-font-size: 0.875rem;
-font-style: bold;
-cursor: pointer;
 `
 
 export const BuyButtonContainer = styled.div`
@@ -108,9 +75,13 @@ display: flex;
 background-color: ${props => props.theme.purple['purple-700']};
 border-radius: 5px;
 padding: 0.313rem;
+cursor: pointer;
+
+&:hover {
+  background-color: ${props => props.theme.purple['purple-500']};
+}
 `
 
 export const BuyButton = styled(ShoppingCartSimple)`
 color: ${props => props.theme.white};
-cursor: pointer;
 `

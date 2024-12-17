@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
 margin: auto;
-margin-top: 6.5rem ;
+margin-top: 6.5rem;
+justify-content: center;
+align-items: center;
 width: 100%;
 background-color: ${props => props.theme.gray['gray-100']};
 padding-bottom: 80px;
@@ -19,6 +21,7 @@ h2 {
 
 export const CoffeeListContainer = styled.div`
   max-width: 80%;
+  padding-left: 15px;
   margin: auto;
   margin-top: 50px;
   display: grid;
@@ -26,5 +29,6 @@ export const CoffeeListContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   row-gap: 3rem;
+  column-gap: 1rem;
 
 `

@@ -1,7 +1,8 @@
+import { useState } from 'react'
+import { QuantityInput } from './QuantityInput'
 import {
   BottomContainer, BuyButton, BuyButtonContainer, CoffeeContainer,
-  DecreaseButton, IncreaseButton, LabelContainer, QuantityContainer,
-  QuantityInput,
+  LabelContainer,
 } from './styles'
 
 interface tagsInterface {
@@ -19,6 +20,20 @@ export interface CoffeeCardProps {
 }
 
 export function CoffeeCard(data: CoffeeCardProps) {
+  const [quantity, setQuantity] = useState(1)
+
+  function increaseQuantity() {
+    if (quantity >= 10) {
+      setQuantity(10)
+    } else { setQuantity((state) => state + 1) }
+  }
+
+  function decreaseQuantity() {
+    if (quantity <= 1) {
+      setQuantity(1)
+    } else { setQuantity((state) => state - 1) }
+  }
+
   return (
     <CoffeeContainer>
       <img src={data.image} alt="" />
@@ -33,12 +48,11 @@ export function CoffeeCard(data: CoffeeCardProps) {
       <p>{data.description}</p>
       <BottomContainer>
         <p>R$</p>
-        <span>{data.value.toFixed(2).replace('.', ',')}</span>
-        <QuantityContainer>
-          <DecreaseButton />
-          <QuantityInput />
-          <IncreaseButton />
-        </QuantityContainer>
+        <span>{(data.value * quantity).toFixed(2).replace('.', ',')}</span>
+        <QuantityInput
+          onIncreaseQuantity={increaseQuantity}
+          onDecreaseQuantity={decreaseQuantity} value={quantity}
+        />
         <BuyButtonContainer>
           <BuyButton size={22} weight="fill" />
         </BuyButtonContainer>
