@@ -20,4 +20,4 @@ Temas Utilizados
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
 
-![Logo do Projeto](src/assets/githubImage/coffeeDeliveryImageProject.jpg)
+![Logo do Projeto](./assets/githubImage/coffeeDeliveryImageProject.jpg)
