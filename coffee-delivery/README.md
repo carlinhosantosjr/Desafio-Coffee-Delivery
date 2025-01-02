@@ -19,8 +19,5 @@ Temas Utilizados
 - Exibir o total de itens no carrinho no Header
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
-
-![Logo do Projeto](src/assets/gitHubImage/coffeeDeliveryImageProject.jpg) width="300" height="200"
-
-<img src="src/assets/gitHubImage/coffeeDeliveryImageProject.jpg" alt="Texto alternativo" width="300" height="200">
+<img src="src/assets/gitHubImage/coffeeDeliveryImageProject.jpg" alt="Texto alternativo" width="800" height="600">
 
