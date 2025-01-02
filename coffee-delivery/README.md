@@ -21,4 +21,5 @@ Temas Utilizados
 
 
 ![Logo do Projeto](src/assets/gitHubImage/coffeeDeliveryImageProject.jpg)
-[Imgur](https://imgur.com/Ym9xwD5.jpeg)
+
+[img]https://i.imgur.com/Ym9xwD5.jpeg[/img]
