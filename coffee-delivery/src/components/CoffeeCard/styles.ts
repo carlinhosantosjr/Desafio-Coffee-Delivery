@@ -76,6 +76,7 @@ background-color: ${props => props.theme.purple['purple-700']};
 border-radius: 5px;
 padding: 0.313rem;
 cursor: pointer;
+user-select: none;
 
 &:hover {
   background-color: ${props => props.theme.purple['purple-500']};

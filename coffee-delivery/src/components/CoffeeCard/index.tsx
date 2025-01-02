@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { QuantityInput } from './QuantityInput'
+import { OrderedCoffeesContext } from '../../contexts/OrderedCoffeesContext'
 import {
   BottomContainer, BuyButton, BuyButtonContainer, CoffeeContainer,
   LabelContainer,
@@ -20,7 +21,18 @@ export interface CoffeeCardProps {
 }
 
 export function CoffeeCard(data: CoffeeCardProps) {
+  const { addOrderedCoffee } = useContext(OrderedCoffeesContext)
+
   const [quantity, setQuantity] = useState(1)
+
+  function handleAddOrderedCoffees() {
+    const newOrderCoffee = {
+      id: data.id,
+      quantity,
+    }
+    addOrderedCoffee(newOrderCoffee)
+    setQuantity(1)
+  }
 
   function increaseQuantity() {
     if (quantity >= 10) {
@@ -53,7 +65,7 @@ export function CoffeeCard(data: CoffeeCardProps) {
           onIncreaseQuantity={increaseQuantity}
           onDecreaseQuantity={decreaseQuantity} value={quantity}
         />
-        <BuyButtonContainer>
+        <BuyButtonContainer onClick={handleAddOrderedCoffees}>
           <BuyButton size={22} weight="fill" />
         </BuyButtonContainer>
       </BottomContainer>

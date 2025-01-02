@@ -39,9 +39,34 @@ gap: 0.3rem;
 `
 
 export const NavLinkStyled = styled(NavLink)`
+  text-decoration: none;
   display: flex;
+  position: relative;
   align-items: center;
   background-color: ${props => props.theme.yellow['yellow-100']};
   border-radius: 6px;
-  padding: 0 8px;
+  padding: 0 0.5rem;
+
+  label {
+  position: absolute;
+  right: -0.313rem;
+  top: -0.313rem;
+  text-align: center;
+  font-family: ${props => props.theme['font-family'].roboto};
+  background-color: ${props => props.theme.yellow['yellow-700']};
+  font-size: 0.75rem;
+  color: ${props => props.theme.white};
+  min-width: 1.063rem;
+  border-radius: 999px;
+  padding: 0.125rem;
+
+  cursor: pointer;
+}
+`
+
+export const ShoppingCartContainer = styled.div`
+display: flex;
+position: relative;
+
+
 `

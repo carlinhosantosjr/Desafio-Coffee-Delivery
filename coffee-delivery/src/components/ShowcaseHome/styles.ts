@@ -23,7 +23,7 @@ background: radial-gradient(
     );
 
 img {
-  margin: auto auto auto 40px;
+  margin: auto auto auto 2.5rem;
 }
 
 @media (max-width:768px){
@@ -37,7 +37,7 @@ export const ShowcaseTitle = styled.div`
   h1 {
   font-family: ${props => props.theme['font-family'].baloo};
   color: ${props => props.theme.brown['brown-800']};
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 130%;
 }
@@ -46,16 +46,16 @@ h3 {
   font-family: ${props => props.theme['font-family'].roboto};
   color: ${props => props.theme.brown['brown-600']};
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 130%;
-  margin-top: 15px;
+  margin-top: 0.938rem;
 }
 `
 
 export const ShowcaseIcons = styled.div`
 display: grid;
 align-items: left;
-margin-top: 50px;
+margin-top: 3.125rem;
 grid-template-columns: 0.8fr 1fr;
 
 p {
@@ -66,9 +66,9 @@ p {
 span {
   display: inline-flex;
   border-radius: 20px;
-  padding: 8px;
-  margin-right: 10px;
-  margin-top: 16px;
+  padding: 0.5rem;
+  margin-right: 0.625rem;
+  margin-top: 1rem;
 }
 
   p:nth-child(1) span {

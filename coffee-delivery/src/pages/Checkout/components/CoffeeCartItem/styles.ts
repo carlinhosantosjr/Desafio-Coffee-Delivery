@@ -5,9 +5,9 @@ export const CoffeeCartItemContainer = styled.div`
 width: 80%;
 display: flex;
 justify-content: space-between;
-margin: 40px;
+margin: 2.5rem;
 border-bottom: 1px solid ${props => props.theme.gray['gray-400']};
-padding-bottom: 35px;
+padding-bottom: 2.188rem;
 
 img {
   width: 64px;
@@ -17,7 +17,7 @@ img {
 h3 {
 font-family: ${props => props.theme['font-family'].roboto};
 color: ${props => props.theme.brown['brown-600']};
-font-size: 16px;
+font-size: 1rem;
 font-weight: normal;
 }
 
@@ -25,7 +25,7 @@ span {
 grid-column: 3;
 font-family: ${props => props.theme['font-family'].roboto};
 color: ${props => props.theme.brown['brown-400']};
-font-size: 16px;
+font-size: 1rem;
 font-weight: bold;
 }
 `
@@ -62,7 +62,7 @@ cursor: pointer;
 label {
   font-family: ${props => props.theme['font-family'].roboto};
   color: ${props => props.theme.brown['brown-400']};
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 160%;
   font-weight: normal;
   pointer-events: none;

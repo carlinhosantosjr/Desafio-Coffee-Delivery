@@ -24,20 +24,22 @@ max-width: 1.4rem;
 pointer-events: none;
 `
 
-export const DecreaseButton = styled(Minus) <React.SVGProps<SVGSVGElement>>`
+export const DecreaseButton = styled(Minus)<React.SVGProps<SVGSVGElement>>`
 color: ${props => props.theme.purple['purple-500']};
 font-size: 0.875rem;
 cursor: pointer;
+user-select: none;
 
 &:hover {
   color: ${props => props.theme.purple['purple-700']};
 }
 `
 
-export const IncreaseButton = styled(Plus) <React.SVGProps<SVGSVGElement>>`
+export const IncreaseButton = styled(Plus)<React.SVGProps<SVGSVGElement>>`
 color: ${props => props.theme.purple['purple-500']};
 font-size: 0.875rem;
 cursor: pointer;
+user-select: none;
 
 &:hover {
   color: ${props => props.theme.purple['purple-700']};
